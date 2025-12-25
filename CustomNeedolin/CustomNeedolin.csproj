@@ -69,7 +69,7 @@
     <None Include="..\Directory.Build.props" Link="Deployment\Directory.Build.props" />
     <None Include="..\thunderstore\thunderstore.toml" Link="Deployment\thunderstore.toml" />
     <None Include="..\languages\en.json" Link="Deployment\en.json" />
-    <None Include="..\thunderstore\icon.png" PackagePath="icon.png" Link="Deployment\icon.png" />
+    <None Include="../thunderstore/icon.png" Pack="True" PackagePath="icon.png" Link="Deployment\icon.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Deployment\" />
