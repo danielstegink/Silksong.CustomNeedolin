@@ -21,12 +21,15 @@
     <!--Shortens and anonymizes paths in debug symbols relative to the project directory. Breakpoints will not work, however.-->
     <PathMap Condition="'$(Configuration)' == 'Release'">$(MSBuildProjectDirectory)=/</PathMap>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <PackageIcon>..\thunderstore\icon.png</PackageIcon>
+    <PackageIcon>icon.png</PackageIcon>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <Description></Description>
     <RepositoryUrl></RepositoryUrl>
     <!--<DllPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Hollow Knight Silksong\Hollow Knight Silksong_Data\Managed</DllPath>-->
   </PropertyGroup>
+  <ItemGroup>
+    <Content Include="..\thunderstore\icon.png" Link="Deployment\icon.png" />
+  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="BepInEx.Analyzers" Version="1.0.8" PrivateAssets="all" />
     <PackageReference Include="BepInEx.Core" Version="5.4.21" />
