@@ -28,9 +28,6 @@
     <!--<DllPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Hollow Knight Silksong\Hollow Knight Silksong_Data\Managed</DllPath>-->
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="..\thunderstore\icon.png" Link="Deployment\icon.png" />
-  </ItemGroup>
-  <ItemGroup>
     <PackageReference Include="BepInEx.Analyzers" Version="1.0.8" PrivateAssets="all" />
     <PackageReference Include="BepInEx.Core" Version="5.4.21" />
     <PackageReference Include="HarmonyX" Version="2.9.0" />
@@ -72,6 +69,7 @@
     <None Include="..\Directory.Build.props" Link="Deployment\Directory.Build.props" />
     <None Include="..\thunderstore\thunderstore.toml" Link="Deployment\thunderstore.toml" />
     <None Include="..\languages\en.json" Link="Deployment\en.json" />
+    <None Include="..\thunderstore\icon.png" PackagePath="icon.png" Link="Deployment\icon.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Deployment\" />
