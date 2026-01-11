@@ -37,7 +37,7 @@
   <ItemGroup Condition="'$(DllPath)' == ''">
     <PackageReference Include="Silksong.GameLibs" Version="*-*" Publicize="false" />
     <PackageReference Include="UnityEngine.Modules" Version="6000.0.50" IncludeAssets="compile" Publicize="false" />
-    <PackageReference Include="DanielSteginkUtils" Version="4.1.0" />
+    <PackageReference Include="DanielSteginkUtils" Version="4.1.1" />
   </ItemGroup>
   <ItemGroup Condition="'$(DllPath)' != ''">
     <Reference Include="Assembly-CSharp">
@@ -82,7 +82,7 @@
       <Binaries Include="$(ProjectDir)/../languages/*.json" LocalDir="/languages" PackDir="languages" />
       <Binaries Include="$(ProjectDir)/../languages/*.json" PackDir="/plugins/languages/" />
       <Binaries Include="$(ProjectDir)/Resources/*.wav" LocalDir="/audio" PackDir="audio" />
-      <Binaries Include="$(ProjectDir)/Resource/*.wav" PackDir="/plugins/audio/" />
+      <Binaries Include="$(ProjectDir)/Resources/*.wav" PackDir="/plugins/audio/" />
     </ItemGroup>
     <PropertyGroup>
       <ThunderstoreDir>$(ProjectDir)/../thunderstore</ThunderstoreDir>
